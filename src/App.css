@@ -107,6 +107,12 @@ ul {
 img {
   max-width: 100%; }
 
+  h2 {
+    margin: 0;
+    margin-bottom: 20px;
+    font-size: 26px;
+    font-weight: 500; }
+
 .text_center {
   text-align: center; }
 
@@ -121,90 +127,20 @@ img {
   grid-gap: 20px;
   height: 100vh; }
 
-.header {
-  grid-area: header;
-  background: #C2F5E6; }
 
-.sidebar {
-  grid-area: nav;
-  background: #C2F5E6;
-  font-size: 20px; }
+  .sidebar {
+    grid-area: nav;
+    background: #C2F5E6;
+    font-size: 20px; }
 
-.sidebar_list_item {
-  padding: 5px 15px; }
-  .sidebar_list_item:last-child {
-    margin-top: 40px; }
-.item_link {
-  border: none;
-  background: none;
-  cursor: pointer;
-  font-size: 24px;
-  color: inherit;
-}
-.content {
-  grid-area: content;
-  display: grid;
-  grid-template-rows: 300px auto 1fr;
-  grid-gap: 20px; }
-
-.image_block {
-  background: url(../src/img/back.jpg) no-repeat;
-  background-position: center;
-  background-size: cover; }
-
-.avatar_block {
-  width: 20%; }
-  .avatar_block img {
-    width: 250px; }
-
-.data_block {
-  width: 75%; }
-
-.personal_data {
-  display: flex; }
-
-h2 {
-  margin: 0;
-  margin-bottom: 20px;
-  font-size: 26px;
-  font-weight: 500; }
-
-.content_posts {
-  width: 80%; }
-
-textarea {
-  border: none;
-  background: #F3F3F3;
-  width: 97%;
-  padding: 20px;
-  color: #47525E;
-  font-size: 20px; }
-  textarea::placeholder {
-    color: silver; }
-
-.button_template {
-  border: none;
-  background: #44CAA9;
-  font-size: 20px;
-  color: #ffffff;
-  padding: 10px 25px; }
-
-.wrapper_button {
-  text-align: right; }
-
-.post_item {
-  display: flex;
-  align-items: center;
-  margin-bottom: 25px; }
-  .post_item::before {
-    content: ' ';
-    display: block;
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    background: #44CAA9;
-    margin-right: 15px; }
-
+    .button_template {
+      cursor: pointer;
+      border: none;
+      background: #44CAA9;
+      font-size: 20px;
+      color: #ffffff;
+      padding: 10px 25px; }
+    
 
 @keyframes App-logo-spin {
   from {
