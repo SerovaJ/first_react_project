@@ -1,0 +1,19 @@
+
+
+.posts {
+  width: 80%; }
+
+textarea {
+  border: none;
+  background: #F3F3F3;
+  width: 97%;
+  padding: 20px;
+  color: #47525E;
+  font-size: 20px; }
+  textarea::placeholder {
+    color: silver; }
+
+
+.wrapper_button {
+  text-align: right; }
+
