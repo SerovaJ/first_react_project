@@ -1,7 +1,7 @@
 .item {
   display: flex;
   align-items: center;
-  margin-bottom: 25px; }
+  }
   .item::before {
     content: ' ';
     display: block;
@@ -10,3 +10,7 @@
     border-radius: 50%;
     background: #44CAA9;
     margin-right: 15px; }
+.like{
+  margin-bottom: 25px;
+  margin-top: 0;
+}

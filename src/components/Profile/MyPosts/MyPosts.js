@@ -22,9 +22,11 @@ const MyPosts = () => {
               </button>
             </div>
           </form>
-          <div className={s.published}>
-            <Post/>
-          </div>
+          
+            <Post message="It's your new program!" like="7"/>
+            <Post message="Hello!" like="5"/>
+            
+         
         </div>
      
    

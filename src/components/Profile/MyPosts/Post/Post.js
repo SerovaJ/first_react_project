@@ -1,10 +1,14 @@
 import React from "react";
 import s from "./Post.module.css";
 
-const Post = () => {
+const Post = (props) => {
+  
   return (
+    <div className={s.published}>
     <div className={s.item}>
-      <p>I wish spring mood!</p>
+      <p>{props.message}</p>
+    </div>
+  <p className={s.like}>Like: {props.like}</p>
     </div>
   );
 };
