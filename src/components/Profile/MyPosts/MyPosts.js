@@ -17,7 +17,7 @@ const MyPosts = () => {
               ></textarea>
             </p>
             <div className={s.wrapper_button}>
-              <button className="button_template" type="submit">
+              <button className="Button" type="submit">
                 Send
               </button>
             </div>

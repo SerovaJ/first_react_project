@@ -2,7 +2,7 @@ import React from "react";
 import s from "./Post.module.css";
 
 const Post = (props) => {
-  
+console.log(props.message)
   return (
     <div className={s.published}>
     <div className={s.item}>
@@ -12,4 +12,5 @@ const Post = (props) => {
     </div>
   );
 };
+
 export default Post;

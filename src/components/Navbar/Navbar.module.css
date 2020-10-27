@@ -1,13 +1,15 @@
-
-
 .item {
-  padding: 5px 15px; }
-  .item:last-child {
-    margin-top: 40px; }
+	padding: 5px 15px;
+}
+
+.item:last-child {
+	margin-top: 40px;
+}
+
 .item_link {
-  border: none;
-  background: none;
-  cursor: pointer;
-  font-size: 24px;
-  color: inherit;
+	border: none;
+	background: none;
+	cursor: pointer;
+	font-size: 24px;
+	color: inherit;
 }

@@ -119,28 +119,36 @@ img {
 .strong {
   font-weight: 700; }
 
-.grid {
-  display: grid;
-  grid-template-areas: "header header header" "nav content content";
-  grid-template-rows: 60px 1fr;
-  grid-template-columns: 15% 1fr;
-  grid-gap: 20px;
-  height: 100vh; }
+.Page {
+	display: grid;
+	grid-template-areas: "header header header" "nav content content";
+	grid-template-rows: 60px 1fr;
+	grid-template-columns: 15% 1fr;
+	grid-gap: 20px;
+	height: 100vh;
+}
 
+.Navbar {
+	grid-area: nav;
+	background: #C2F5E6;
+	font-size: 20px; 
+}
 
-  .sidebar {
-    grid-area: nav;
-    background: #C2F5E6;
-    font-size: 20px; }
+.Profile {
+	grid-area: content;
+	display: grid;
+	grid-template-rows: 300px auto 1fr;
+	grid-gap: 20px; 
+}
 
-    .button_template {
-      cursor: pointer;
-      border: none;
-      background: #44CAA9;
-      font-size: 20px;
-      color: #ffffff;
-      padding: 10px 25px; }
-    
+.Button {
+	cursor: pointer;
+	border: none;
+	background: #44CAA9;
+	font-size: 20px;
+	color: #ffffff;
+	padding: 10px 25px;
+}
 
 @keyframes App-logo-spin {
   from {
