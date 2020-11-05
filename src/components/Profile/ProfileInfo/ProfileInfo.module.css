@@ -1,0 +1,27 @@
+.container {
+	grid-area: content;
+	display: grid;
+	grid-template-rows: 300px auto;
+	grid-gap: 20px; 
+}
+
+.image_top {
+	background: url(./../../../img/back.jpg) no-repeat;
+	background-position: center;
+	background-size: cover; }
+
+.avatar {
+	width: 20%;
+}
+
+.avatar img {
+	width: 250px;
+}
+
+.data {
+	width: 75%;
+}
+
+.personal {
+	display: flex;
+}

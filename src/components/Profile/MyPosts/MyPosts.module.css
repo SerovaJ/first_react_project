@@ -1,19 +1,21 @@
-
-
 .posts {
-  width: 80%; }
+	width: 80%;
+	margin-top: 20px;
+}
 
 textarea {
-  border: none;
-  background: #F3F3F3;
-  width: 97%;
-  padding: 20px;
-  color: #47525E;
-  font-size: 20px; }
-  textarea::placeholder {
-    color: silver; }
+	border: none;
+	background: #F3F3F3;
+	width: 97%;
+	padding: 20px;
+	color: #47525E;
+	font-size: 20px;
+}
 
+textarea::placeholder {
+	color: silver;
+}
 
 .wrapper_button {
-  text-align: right; }
-
+	text-align: right;
+}

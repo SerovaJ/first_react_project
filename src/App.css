@@ -134,13 +134,6 @@ img {
 	font-size: 20px; 
 }
 
-.Profile {
-	grid-area: content;
-	display: grid;
-	grid-template-rows: 300px auto 1fr;
-	grid-gap: 20px; 
-}
-
 .Button {
 	cursor: pointer;
 	border: none;

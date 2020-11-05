@@ -1,21 +1,3 @@
-.image_top {
-  background: url(./../../img/back.jpg) no-repeat;
-  background-position: center;
-  background-size: cover; }
-
-.avatar {
-  width: 20%; }
-  .avatar img {
-    width: 250px; }
-
-.data {
-  width: 75%; }
-
-.personal {
-  display: flex; }
-
-
-
 .posts {
   width: 80%; }
 
