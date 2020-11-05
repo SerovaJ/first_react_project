@@ -1,0 +1,48 @@
+.dialogs {
+	display: grid;
+	grid-template-columns: 2fr 10fr;
+}
+
+.items {
+	border-right: 2px solid gray;
+}
+
+.dialog {
+	padding: 10px 0;
+	position: relative;
+	padding-left: 20px;
+}
+
+.dialog:before {
+	content: ' ';
+	display: block;
+	width: 7px;
+	height: 7px;
+	border-radius: 50%;
+	background-color: #44CAA9;
+	position: absolute;
+	left: 0;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+.dialog.active {
+	font-size: 20px;
+	color:  #44CAA9;
+}
+
+.messages {
+	padding-left: 40px;
+}
+
+.message {
+	width: 200px;
+	padding: 10px 0;
+	border: 1px solid gray;
+	border-radius: 10px;
+	text-align: center;
+}
+
+.message + .message {
+	margin-top: 20px;
+}

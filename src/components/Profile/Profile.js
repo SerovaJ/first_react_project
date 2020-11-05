@@ -20,9 +20,7 @@ const Profile = () => {
         </div>
 
         <MyPosts/>
-       
       </div>
-   
   );
 }
 export default Profile;
