@@ -1,9 +1,9 @@
 .item {
-	padding: 5px 15px;
+	padding: 5px 0;
 }
 
 .item:last-child {
-	margin-top: 40px;
+	margin-top: 20px;
 }
 
 .item_link {
@@ -16,4 +16,31 @@
 
 .item_link.active {
 	color: white;
+}
+
+.friends {
+	margin-top: 50px;
+}
+
+.friendsLink {
+	font-size: 32px;
+}
+
+.friendsList {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	justify-items: center;
+}
+
+.friendsName {
+	font-size: 16px;
+}
+
+.friendsName:before {
+	content: ' ';
+	display: block;
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	background: #44CAA9;
 }

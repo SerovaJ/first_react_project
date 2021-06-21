@@ -131,7 +131,8 @@ img {
 .Navbar {
 	grid-area: nav;
 	background: #C2F5E6;
-	font-size: 20px; 
+	font-size: 20px;
+	padding: 0 15px;
 }
 
 .Button {

@@ -1,34 +1,28 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
 import App from './App';
+import './index.css';
+import store from './redux/redux-store';
 import * as serviceWorker from './serviceWorker';
 
-let posts = [
-	{id: 1, message: 'It\'s your new program!', likesCount: 12},
-	{id: 2, message: 'Hello!', likesCount: 11},
-]
+let state = store.getState();
 
-let dialogs = [
-	{id: 1, name: 'Juliya'},
-	{id: 2, name: 'Anton'},
-	{id: 3, name: 'Sofiya'},
-	{id: 4, name: 'Valeriya'},
-]
+let rerenderEntireTree = (state) => {
+	ReactDOM.render(
+		<React.StrictMode>
+			<App state = {store.getState()}
+			dispatch = {store.dispatch.bind(store)}
+			/>
+		</React.StrictMode>,
+		document.getElementById('root')
+	);
+}
 
-let messages = [
-	{id: 1, message: 'Hi'},
-	{id: 2, message: 'Hello'},
-	{id: 3, message: 'Aloha'},
-	{id: 4, message: 'How are you?'},
-]
+rerenderEntireTree(state);
 
-ReactDOM.render(
-  <React.StrictMode>
-    <App posts = {posts} dialogs = {dialogs} messages = {messages} />
-  </React.StrictMode>,
-  document.getElementById('root')
-);
+store.subscribe(() => {
+	rerenderEntireTree(state);
+});
 
 
 
