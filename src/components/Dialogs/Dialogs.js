@@ -1,21 +1,20 @@
 import React from 'react';
-import { addDialogElementActionCreator, updateDialogElementActionCreator } from '../../redux/dialogs-reducer';
 import DialogItem from './DialogItem/DialogItem';
 import s from './Dialogs.module.css';
 import Message from './Message/Message';
 
 const Dialogs = (props) => {
-	let dialogsElements = props.dialogsPage.dialogs.map ((d, index) => <DialogItem name = {d.name} id = {d.id} key = {index} />);
+	let dialogsElements = props.dialogs.map ((d, index) => <DialogItem name = {d.name} id = {d.id} key = {index} />);
 
-	let messagesElements = props.dialogsPage.messages.map ((m, index) => <Message message = {m.message} key = {index} />);
+	let messagesElements = props.messages.map ((m, index) => <Message message = {m.message} key = {index} />);
 
-	let addMessage = () => {
-		props.dispatch(addDialogElementActionCreator());
+	let onAddMessage = () => {
+		props.addDialogElement();
 	}
 
 	let onDialogChange = (e) => {
 		let textMessage = e.target.value;
-		props.dispatch(updateDialogElementActionCreator(textMessage));
+		props.updateDialogElement(textMessage);
 	}
 
 	return (
@@ -37,7 +36,7 @@ const Dialogs = (props) => {
 						></textarea>
 					</p>
 					<div className = {s.wrapper_button}>
-						<button onClick={addMessage} className="Button">
+						<button onClick={onAddMessage} className="Button">
 							Send message
 						</button>
 					</div>

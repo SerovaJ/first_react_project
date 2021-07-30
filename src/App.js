@@ -1,7 +1,7 @@
 import React from 'react';
 import { BrowserRouter, Route } from 'react-router-dom';
 import './App.css';
-import Dialogs from './components/Dialogs/Dialogs';
+import DialogsContainer from './components/Dialogs/DialogsContainer';
 import Friends from './components/Friends/Friends';
 import Header from './components/Header/Header';
 import Music from './components/Music/Music';
@@ -19,12 +19,10 @@ function App(props) {
 				<Navbar />
 
 				<div className="Content">
-					<Route path = '/dialogs' render = { () => <Dialogs
-						dialogsPage = {props.state.dialogsPage}
-						dispatch = {props.dispatch}/>} />
+					<Route path = '/dialogs' render = { () => <DialogsContainer
+						store = {props.store}/>} />
 					<Route path = '/profile' render = { () => <Profile
-						profilePage = {props.state.profilePage}
-						dispatch = {props.dispatch}/>} />
+						store = {props.store}/>} />
 					<Route path = '/news' render = { () => <News/>} />
 					<Route path = '/music' render = { () => <Music/>} />
 					<Route path = '/settings' render = { () => <Settings/>} />
